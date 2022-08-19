@@ -1,6 +1,6 @@
 # Background and Definitions
 ## Middling Divisors
-The divisors of a number $n$ come in pairs which multiply to $n$; in general if $a|n$ then $a$ and $n/a$ are paired divisors. The pair whose values are closest together are called _middling divisors_. These smaller of the two is denoted $\mathcal{M}(n)$ and the larger is denoted $\mathcal{M}'(n)$.
+The divisors of a number $n$ come in pairs which multiply to $n$; in general if $a|n$ then $a$ and $n/a$ are paired divisors. The pair whose values are closest together are called _middling divisors_. These smaller of the two is denoted $\mathcal{M}(n)$ (OEIS [A033676](https://oeis.org/A033676)) and the larger is denoted $\mathcal{M}'(n)$ (OEIS [A033677](https://oeis.org/A033677)).
 
 ## Square Numbers' Middling Divisors
 A square number has non-distinct middling divisors; and conversely any number whose middling divisors are equal is square. Symbolically: $\mathcal{M}(n)=\mathcal{M}'(n)$ iff $n$ is square.
