@@ -8,4 +8,5 @@ In general, the $k$-th curve corresponds to those numbers $n$ whose largest prim
 $$s_a(kp) = 1 - \frac{p-k}{kp-1} = \frac{(k-1)(p+1)}{kp-1}\to \frac{k-1}{k}.$$
 This gives a formula for $s_a$ in terms of the greatest prime factor function $\mathrm{gpf}$:
 $$s_a(n) = \frac{\left(\frac{n}{\mathrm{gpf}(n)}-1\right)(\mathrm{gpf}(n)+1)}{n-1}.$$
+Likewise, this can be solved as a quadratic for $\mathrm{gpf}$ in terms of $s_a$, giving a surprising result: knowing the middling divisors gives you the gretest prime factor for the computational cost of a square root (and vice versa, since $s_a$ is quadratic in an individual middling factor).
 
