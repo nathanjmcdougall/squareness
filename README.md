@@ -11,12 +11,12 @@ A prime number's middling divisors are $\mathcal{M}(n)=1$ and $\mathcal{M}'(n)=n
 ## Arithmetic Squareness
 The _arithmetic squareness_ of a number $n>1$ is defined as
 $$s_a(n)=1-\frac{\mathcal{M}'(n)-\mathcal{M}(n)}{n-1}.$$
-Note $s_a(n)=1$ for a square number, and $s(p)= 0$ for a prime $p$. These the the bounds, so $0\leq s(n)\leq 1$.
+Note $s_a(n)=1$ for a square number, and $s(p)= 0$ for a prime $p$. These the the bounds, so $0\leq s_a(n)\leq 1$.
 
 ## Geometric Squareness
 The _geometric squareness_ is defined as the ratio
 $$s_g(n)=\frac{\mathcal{M}(n)}{\mathcal{M}'(n)}.$$
-Again, $s_g(n)=1$ for a square number, and $s_g(p_n)\to 0$ for the primes $p_n$ as $n\to\infty$. In this case, $0 \lt s(n) \leq 1$.
+Again, $s_g(n)=1$ for a square number, and $s_g(p_n)\to 0$ for the primes $p_n$ as $n\to\infty$. In this case, $0 \lt s_g(n) \leq 1$.
 
 ## Investigation
 The purpose of this repository is to investigate both notions of squareness. How do they plot as sequences? Is there any interesting structure to them warranting further investigation?
