@@ -2,7 +2,7 @@
 """
 import numpy as np
 import pytest
-from squareness import arithmetic_squareness, middling_divisors
+from squareness import arithmetic_squareness
 
 from tests.seq import PRIMES, SQUARES
 
