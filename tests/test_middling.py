@@ -43,5 +43,5 @@ def test_squares(square: int) -> None:
 
 @pytest.mark.parametrize("number,expected", KNOWN_CASES.items())
 def test_manual(number: int, expected: Tuple[int, int]) -> None:
-    """Test that middling divisors are correct for a given number."""
+    """Test that middling divisors are correct for some manually-calculated cases."""
     assert middling_divisors(number) == expected
