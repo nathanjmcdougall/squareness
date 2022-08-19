@@ -4,9 +4,6 @@ As shown in [arithmetic_squareness_to_5000_asymptotes.png](../src/img/graphs/ari
 
 The first curve is the most straightfoward, which is 0. These points are the primes. But what about the points that seem to follow near $1/2$? These are the even semiprimes; i.e. the primes doubled. Why do they tend to $1/2$? Because
 $$s_a(2p) = 1 - \frac{p-2}{2p-1} = \frac{p+1}{2p-1}\to \frac{1}{2}.$$
-In general, the $k$-th curve corresponds to those numbers $n$ whose largest prime factor is $n/k$. In such a case we have
-$$s_a(kp) = 1 - \frac{p-k}{kp-1} = \frac{(k-1)(p+1)}{kp-1}\to \frac{k-1}{k}.$$
-This gives a formula for $s_a$ in terms of the greatest prime factor function $\mathrm{gpf}$:
-$$s_a(n) = \frac{\left(\frac{n}{\mathrm{gpf}(n)}-1\right)(\mathrm{gpf}(n)+1)}{n-1}.$$
-Likewise, this can be solved as a quadratic for $\mathrm{gpf}$ in terms of $s_a$, giving a surprising result: knowing the middling divisors gives you the gretest prime factor for the computational cost of a square root (and vice versa, since $s_a$ is quadratic in an individual middling factor).
+In general, the $k$-th curve corresponds to those numbers $n$ for which $\mathcal{M}(n)=k$. In such a case we have
+$$s_a(kq) = 1 - \frac{q-k}{kq-1} = \frac{(k-1)(q+1)}{kq-1}\to \frac{k-1}{k}.$$
 
