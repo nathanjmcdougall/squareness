@@ -3,12 +3,10 @@
 from typing import Tuple
 
 import pytest
-import sympy
+from tests.seq import PRIMES, SQUARES
 import squareness
 
 
-PRIMES = sympy.primerange(1, 100)
-SQUARES = [idx**2 for idx in range(1, 100)]
 KNOWN_CASES = {
     8: (2, 4),
     12: (3, 4),
