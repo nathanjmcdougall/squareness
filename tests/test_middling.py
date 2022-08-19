@@ -3,8 +3,9 @@
 from typing import Tuple
 
 import pytest
-import squareness
 import sympy
+import squareness
+
 
 PRIMES = sympy.primerange(1, 100)
 SQUARES = [idx**2 for idx in range(1, 100)]
