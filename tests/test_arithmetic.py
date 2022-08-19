@@ -6,7 +6,7 @@ from squareness import arithmetic_squareness, middling_divisors
 
 from tests.seq import PRIMES, SQUARES
 
-KNOWN_CASES = KNOWN_CASES = {
+KNOWN_CASES = {
     8: 5 / 7,
     15: 6 / 7,
     99: 48 / 49,
