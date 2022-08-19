@@ -11,7 +11,7 @@ A prime number's middling divisors are $\mathcal{M}(n)=1$ and $\mathcal{M}'(n)=n
 ## Arithmetic Squareness
 The _arithmetic squareness_ of a number $n>1$ is defined as
 $$s_a(n)=1-\frac{\mathcal{M}'(n)-\mathcal{M}(n)}{n-1}.$$
-$s_a(n)=1$ for a square number, and $s(p)= 0$ for a prime $p$. These the the bounds, so $0\leq s(n)\leq 1$.
+Note $s_a(n)=1$ for a square number, and $s(p)= 0$ for a prime $p$. These the the bounds, so $0\leq s(n)\leq 1$.
 
 ## Geometric Squareness
 The _geometric squareness_ is defined as the ratio
