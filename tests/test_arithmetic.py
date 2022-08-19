@@ -18,8 +18,6 @@ KNOWN_CASES = KNOWN_CASES = {
 def test_prime(prime: int) -> None:
     """Test that arithmetic squareness is correct for primes."""
     assert arithmetic_squareness(prime) == 0
-    assert middling_divisors(prime) == (1, prime)
-
 
 def test_one() -> None:
     """Test that arithmetic squareness is undefined for 1."""
