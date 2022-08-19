@@ -2,5 +2,5 @@
 """
 import sympy
 
-PRIMES = sympy.primerange(1, 100)
-SQUARES = [idx**2 for idx in range(1, 100)]
+PRIMES = sympy.primerange(2, 100)
+SQUARES = [idx**2 for idx in range(2, 100)]
