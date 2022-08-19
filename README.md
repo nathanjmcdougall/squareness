@@ -20,3 +20,7 @@ Again, $s_g(n)=1$ for a square number, and $s_g(p_n)\to 0$ for the primes $p_n$ 
 
 ## Investigation
 The purpose of this repository is to investigate both notions of squareness. How do they plot as sequences? Is there any interesting structure to them warranting further investigation?
+
+# Configuration
+Pytest is used for tests, create a .env file with PYTHONPATH = ./src to allow for importing of the
+squareness package in the tests.
