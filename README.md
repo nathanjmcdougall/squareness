@@ -8,6 +8,9 @@ A square number has non-distinct middling divisors; and conversely any number wh
 ## Prime Numbers' Middling Divisors
 A prime number's middling divisors are $\mathcal{M}(n)=1$ and $\mathcal{M}'(n)=n$. This is the most extreme relative gap between the middling divisors possible. In this particular sense, square numbers can be considered _opposite_ to square numbers. There lies a spectrum of squareness-primeness. We here investigate this spectrum and two ways to measure it.
 
+## Geometric interpretation
+Consider $n$ square cells. They must be arranged to form a rectangle, this is at least possible as $1 \times n $, but can we do better in terms of minimizing the perimeter of this rectangle? The best possible configuration in this sense is $\mathcal{M}(n) \times \mathcal{M}'(n)$.
+
 ## Arithmetic Squareness
 The _arithmetic squareness_ of a number $n>1$ is defined as
 $$s_a(n)=1-\frac{\mathcal{M}'(n)-\mathcal{M}(n)}{n-1}.$$
