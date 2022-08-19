@@ -6,4 +6,6 @@ The first curve is the most straightfoward, which is 0. These points are the pri
 $$s_a(2p) = 1 - \frac{p-2}{2p-1} = \frac{p+1}{2p-1}\to \frac{1}{2}.$$
 In general, the $k$-th curve corresponds to those numbers $n$ whose largest prime factor is $n/k$. In such a case we have
 $$s_a(kp) = 1 - \frac{p-k}{kp-1} = \frac{(k-1)(p+1)}{kp-1}\to \frac{k-1}{k}.$$
+This gives a formula for $s_a$ in terms of the greatest prime factor function $\mathrm{gpf}$:
+$$s_a(n) = \frac{\left(\frac{n}{\mathrm{gpf}(n)}-1\right)(\mathrm{gpf}(n)+1)}{n-1}.$$
 
