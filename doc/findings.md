@@ -8,3 +8,8 @@ In general, the $k$-th curve corresponds to those numbers $n$ for which $\mathca
 $$s_a(kq) = 1 - \frac{q-k}{kq-1} = \frac{(k-1)(q+1)}{kq-1}\to \frac{k-1}{k}.$$
 The numbers in the first curve are the primes ([A000040](https://oeis.org/A000040)), the second are the semi-primes and 8 ([A161344](https://oeis.org/A161344)), and then the further sequences are [A161345](https://oeis.org/A161345), [A161424](https://oeis.org/A161424), [A161835](https://oeis.org/A161835), and then all the entries from [A162526](https://oeis.org/A162526) to [A162532](https://oeis.org/A162532) inclusive (i.e. up to the twelvth curve).
 
+# Geometric Squareness
+## Prime lines
+On the graph [geometric_squareness_basic_to_50000.png](..\src\img\graphs\geometric_squareness_basic_to_50000.png) there are various lines of the form $s_g(n)= mn$ for various gradients $m$. On [geometric_squareness_basic_to_50000_lines.png](..\src\img\graphs\geometric_squareness_basic_to_50000_lines.png) these gradients are shown to correspond to $1/p^{2}$ for prime numbers $p$.
+
+In fact, every point $(n, s_{g}(n))$ lies on _a_ line $s_g(n)= mn$, namely the one where $m=\frac{1}{\mathcal{M}'(n)^2}$. This follows from the facts that $s_g(n) = \frac{\mathcal{M}(n)}{\mathcal{M}'(n)}$, and $\mathcal{M}(n)\cdot \mathcal{M}'(n) =n$. But why do the lines where $\mathcal{M}'(n)$ is prime seem to stand out? Why do more points seem to lie on these lines than other lines? In other words, why do upper middling divisors seem to be disproportionately prime?
