@@ -3,6 +3,7 @@
 import matplotlib.pyplot as plt
 import matplotlib.ticker as tck
 import numpy as np
+from sympy import isprime
 
 from nav import GRAPH_PARENT_PATH
 from squareness import geometric_squareness
@@ -51,7 +52,8 @@ ax.set_ylabel("Squareness per $n$")
 ax.set_title("Geometric Squareness per $n$")
 ax.set_ylim(ymin, ymax)
 for val in range(2,70):
-    ax.axhline(1/val**2, ls='--', color='black')
+    color='red' if isprime(val) else 'black'
+    ax.axhline(1/val**2, ls='--', color=color)
 plt.savefig(GRAPH_PARENT_PATH / "geometric_squareness_normalized_to_50000_lines.png")
 
 # Up to 50,000 with annotations
@@ -60,8 +62,9 @@ y_min, y_max = 0, 1
 fig, ax = plt.subplots(figsize=(20, 20))
 ax.scatter(xs, ys)
 for val in range(2,10_000):
-    plot_ys = [plot_x/val**2 for plot_x in plot_xs]
-    ax.plot(plot_xs, plot_ys, ls='--', color='black')
+    if isprime(val):
+        plot_ys = [plot_x/val**2 for plot_x in plot_xs]
+        ax.plot(plot_xs, plot_ys, ls='--', color='red')
 ax.set_xlabel("Number")
 ax.set_ylabel("Squareness")
 ax.set_title("Geometric Squareness")
