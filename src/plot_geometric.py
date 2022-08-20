@@ -6,7 +6,7 @@ import numpy as np
 from sympy import isprime
 
 from nav import GRAPH_PARENT_PATH
-from squareness import geometric_squareness
+from squareness import geometric_squareness, middling_divisors
 
 plt.style.use("calibri18.mplstyle")
 
@@ -16,10 +16,9 @@ norm_squarenesses = [geometric_squareness(num)/num for num in nums]
 
 plot_xs = np.linspace(2, 50_000, 1_000)
 
+# Basic to 50,000
 xs, ys = nums, squarenesses
 y_min, y_max = 0, 1
-
-# Basic to 50,000
 fig, ax = plt.subplots(figsize=(20, 20))
 ax.scatter(xs, ys)
 ax.set_xlabel("Number")
@@ -72,3 +71,17 @@ ax.set_ylim(y_min, y_max)
 percent_formatter = tck.PercentFormatter(y_max)
 ax.yaxis.set_major_formatter(percent_formatter)
 plt.savefig(GRAPH_PARENT_PATH / "geometric_squareness_basic_to_50000_lines.png")
+
+# Basic to 50,000 coloured based on primality of upper middling divisor
+xs, ys = nums, squarenesses
+y_min, y_max = 0, 1
+fig, ax = plt.subplots(figsize=(20, 20))
+color = ['red' if isprime(middling_divisors(num)[1]) else 'tab:blue' for num in nums]
+ax.scatter(xs, ys, color=color)
+ax.set_xlabel("Number")
+ax.set_ylabel("Squareness")
+ax.set_title("Geometric Squareness")
+ax.set_ylim(y_min, y_max)
+percent_formatter = tck.PercentFormatter(y_max)
+ax.yaxis.set_major_formatter(percent_formatter)
+plt.savefig(GRAPH_PARENT_PATH / "geometric_squareness_basic_to_50000_prime_coloured.png")
