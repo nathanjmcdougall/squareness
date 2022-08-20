@@ -17,12 +17,12 @@ plot_xs = np.linspace(2, 50_000, 1_000)
 xs, ys = nums, squarenesses
 y_min, y_max = 0, 1
 
-# Basic to 5000
+# Basic to 50,000
 fig, ax = plt.subplots(figsize=(20, 20))
 ax.scatter(xs, ys)
 ax.set_xlabel("Number")
 ax.set_ylabel("Squareness")
-ax.set_title("Geometric Squareness")
+ax.set_title("Geo Squareness")
 ax.set_ylim(y_min, y_max)
 percent_formatter = tck.PercentFormatter(y_max)
 ax.yaxis.set_major_formatter(percent_formatter)
